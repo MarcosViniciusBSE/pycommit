@@ -1,0 +1,10 @@
+{
+    "pattern": "{tipo}({branch}):[{task}] {comment}",
+    "name": "example",
+    "atributes": [
+        "tipo",
+        "branch",
+        "task",
+        "comment"
+    ]
+}
