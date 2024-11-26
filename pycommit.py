@@ -4,13 +4,10 @@ from model.pattern import Pattern
 from model.executer import Executer
 
 class Cli:
-    def hello(self, name="Mundo"):
-        print(f"Olá, {name}")
-
     def add_pattern(self, pattern, name):
         pn = PatternCreator(pattern, name)
         response = pn.create_pattern()
-        if response == True:
+        if response:
             print(f"Pattern {name} criada com sucesso")
         else: raise Exception("Ocorreu um erro")
 
